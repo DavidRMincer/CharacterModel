@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: Character.ma
-//Last modified: Fri, Dec 20, 2019 12:54:57 PM
+//Last modified: Fri, Dec 20, 2019 12:57:51 PM
 //Codeset: 1252
 requires maya "2019";
 requires "mtoa" "3.1.2";
@@ -17,13 +17,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "B84CF79A-4747-98BE-53BF-299002498C44";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 11.078647721188362 11.605475500474741 14.062604195938636 ;
-	setAttr ".r" -type "double3" -19.538352734611163 757.79999999967004 0 ;
+	setAttr ".t" -type "double3" 15.262464318988279 10.795476260358567 22.687528868781467 ;
+	setAttr ".r" -type "double3" -6.9383527344687401 751.39999999952965 4.6578286430058214e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "CD69A430-4030-DB06-925B-5D8A8E647638";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 20.228894424558924;
+	setAttr ".coi" 28.778540417433121;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -211,8 +211,8 @@ createNode mesh -n "BackpackShape" -p "Backpack";
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "Pan" -p "Backpack";
 	rename -uid "F90DD1D0-46D2-716F-93A9-E7BF356F1134";
-	setAttr ".t" -type "double3" 2.6604521167841764 0.19879007122191261 -0.13715120766147515 ;
-	setAttr ".r" -type "double3" -11.451151152142154 1.8670481854913157 99.137165592445427 ;
+	setAttr ".t" -type "double3" 2.6046855819763164 0.56432056374005057 -0.78153742655539804 ;
+	setAttr ".r" -type "double3" -6.3261965970524638 30.461881401082692 102.26252586242796 ;
 	setAttr ".s" -type "double3" 0.53249544891514733 0.46123596380481541 0.53249544891514722 ;
 	setAttr ".rp" -type "double3" 1.0196872441347149 0.20173073789992416 1.41648510514564 ;
 	setAttr ".rpt" -type "double3" -1.6613576862488078 0.77179807373079989 -0.10218372562641953 ;
