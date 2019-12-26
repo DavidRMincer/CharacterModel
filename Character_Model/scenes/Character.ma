@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: Character.ma
-//Last modified: Thu, Dec 26, 2019 05:04:34 PM
+//Last modified: Thu, Dec 26, 2019 05:16:15 PM
 //Codeset: 1252
 requires maya "2019";
 requires "mtoa" "3.1.2";
@@ -17,13 +17,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "B84CF79A-4747-98BE-53BF-299002498C44";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 14.418536036756565 17.238983745229966 11.68841880117645 ;
-	setAttr ".r" -type "double3" -32.738352733718031 405.7999999998114 4.5621254828015187e-15 ;
+	setAttr ".t" -type "double3" 16.823806169300266 10.2531633787678 16.123782454651597 ;
+	setAttr ".r" -type "double3" -9.9383527337178883 401.79999999981061 -5.3330936924984426e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "CD69A430-4030-DB06-925B-5D8A8E647638";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 22.97088639826551;
+	setAttr ".coi" 24.75995438046133;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -6259,8 +6259,8 @@ createNode ikHandle -n "ikHandle3" -p "Character";
 	setAttr ".roc" yes;
 createNode ikHandle -n "ikHandle2" -p "Character";
 	rename -uid "252C205D-462D-1F82-A396-A79CD5376574";
-	setAttr ".t" -type "double3" -4.8149287695294483 8.6853839768062731 1.1393302990008785 ;
-	setAttr ".r" -type "double3" 3.3672066978527702e-14 1.1887545545763662e-13 179.44153187846726 ;
+	setAttr ".t" -type "double3" -4.8149287695294483 8.6853839768062819 1.1393302990008785 ;
+	setAttr ".r" -type "double3" 4.0019392707999903e-14 1.1929398671226205e-13 179.44153187846726 ;
 	setAttr ".roc" yes;
 createNode ikHandle -n "ikHandle1" -p "Character";
 	rename -uid "EA2029A2-4414-CC0C-3287-97B41583D824";
@@ -6271,7 +6271,6 @@ createNode joint -n "Root_Rig" -p "Character";
 	rename -uid "A1A6BD77-4075-A65D-9F22-1D8C0C59F6D3";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
 	setAttr ".uoc" 1;
-	setAttr ".t" -type "double3" 0.051945436709423462 5.2335551094887416 0 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 0 0 87.222790898955637 ;
@@ -6628,7 +6627,7 @@ createNode joint -n "joint10" -p "Right_Arm_Rig";
 	setAttr ".uoc" 1;
 	setAttr ".oc" 7;
 	setAttr ".t" -type "double3" 0.29339921319433027 -0.013524688855718144 -4.3950656888423261e-16 ;
-	setAttr ".r" -type "double3" 1.8660538126414813e-12 -9.9611100431149704e-11 0.23196437720139595 ;
+	setAttr ".r" -type "double3" 1.8661948189265056e-12 -9.9618629981272642e-11 0.23196437720139595 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 0 0 -4.6119263040291116 ;
@@ -6641,7 +6640,7 @@ createNode joint -n "joint11" -p "|Character|Root_Rig|joint2|joint3|joint4|joint
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
 	setAttr ".uoc" 1;
 	setAttr ".t" -type "double3" 0.65252694047293913 0.013541313210055663 -1.5364410159943807e-15 ;
-	setAttr ".r" -type "double3" -4.8237411475863165e-12 -1.2827485720491931e-10 -2.1543967983034751 ;
+	setAttr ".r" -type "double3" -4.8290677527630426e-12 -1.2834566280633932e-10 -2.1543967983048291 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 0 0 6.6265250918999365 ;
@@ -6655,7 +6654,7 @@ createNode joint -n "joint12" -p "|Character|Root_Rig|joint2|joint3|joint4|joint
 	setAttr ".uoc" 1;
 	setAttr ".oc" 1;
 	setAttr ".t" -type "double3" 0.17930229364756411 -0.01011743659206971 -2.3544801878565782e-16 ;
-	setAttr ".r" -type "double3" -5.4777248675357122e-12 -6.1659441294400007e-11 2.5139448530070387 ;
+	setAttr ".r" -type "double3" -5.4749026758299493e-12 -6.1596638763211476e-11 2.5139448530087791 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 0 0 -1.7294126644220236 ;
@@ -6669,7 +6668,7 @@ createNode joint -n "joint13" -p "|Character|Root_Rig|joint2|joint3|joint4|joint
 	setAttr ".uoc" 1;
 	setAttr ".oc" 2;
 	setAttr ".t" -type "double3" 0.20196734508838865 -0.013520781430557934 -6.8400503325592848e-16 ;
-	setAttr ".r" -type "double3" 1.3010609176811108e-13 -6.8273087770316618e-12 -2.227191708296997 ;
+	setAttr ".r" -type "double3" 1.3010609176801788e-13 -6.8273087770311384e-12 -2.2271917082966701 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 0 0 -1.490082232431087 ;
@@ -6683,7 +6682,7 @@ createNode joint -n "joint14" -p "|Character|Root_Rig|joint2|joint3|joint4|joint
 	setAttr ".uoc" 1;
 	setAttr ".oc" 3;
 	setAttr ".t" -type "double3" 0.18982071292143296 9.2460761269563818e-16 -2.2204460492503141e-16 ;
-	setAttr ".r" -type "double3" -1.3821757112125069e-12 2.6125034225582387e-11 5.1031889585844823 ;
+	setAttr ".r" -type "double3" -1.392826232727735e-12 2.6199035904629801e-11 5.1031889585831234 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 0 0 -10.721096273438453 ;
@@ -6697,7 +6696,7 @@ createNode joint -n "joint15" -p "|Character|Root_Rig|joint2|joint3|joint4|joint
 	setAttr ".uoc" 1;
 	setAttr ".oc" 4;
 	setAttr ".t" -type "double3" 0.16950942163394522 0.016735040657361346 -6.4379479167404861e-16 ;
-	setAttr ".r" -type "double3" -3.8774265247898432e-12 4.2458134697123893e-11 -4.261032340749769 ;
+	setAttr ".r" -type "double3" -3.8774265247889506e-12 4.245813469712346e-11 -4.2610323407485708 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 0 0 6.7712282516740752 ;
@@ -6711,7 +6710,7 @@ createNode joint -n "joint16" -p "|Character|Root_Rig|joint2|joint3|joint4|joint
 	setAttr ".uoc" 1;
 	setAttr ".oc" 5;
 	setAttr ".t" -type "double3" 0.18947060521072331 0.010153123610564373 -6.5273040091447249e-16 ;
-	setAttr ".r" -type "double3" -1.4448855745731144e-12 4.2904398235315889e-11 0.87601102466572267 ;
+	setAttr ".r" -type "double3" -1.437259109987147e-12 4.2748996741443707e-11 0.87601102466489056 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 0 0 -0.31567603175652276 ;
@@ -6725,7 +6724,7 @@ createNode joint -n "joint17" -p "|Character|Root_Rig|joint2|joint3|joint4|joint
 	setAttr ".uoc" 1;
 	setAttr ".oc" 6;
 	setAttr ".t" -type "double3" 0.16340143058880849 0.0067673603802415726 -6.5719820553467714e-16 ;
-	setAttr ".r" -type "double3" -2.0513687519469166e-12 2.4417118143365449e-11 -1.1224201002971597 ;
+	setAttr ".r" -type "double3" -2.051368751946871e-12 2.4417118143365831e-11 -1.122420100296835 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 0 0 -0.97987788054419089 ;
@@ -6739,7 +6738,7 @@ createNode joint -n "joint18" -p "|Character|Root_Rig|joint2|joint3|joint4|joint
 	setAttr ".uoc" 1;
 	setAttr ".oc" 7;
 	setAttr ".t" -type "double3" 0.22836542296716739 0.01690435380984601 -6.4379479167405108e-16 ;
-	setAttr ".r" -type "double3" -8.8482401494803759e-14 -6.859470564571695e-13 0.96158254218171224 ;
+	setAttr ".r" -type "double3" -8.8482401494920296e-14 -6.8594705645809574e-13 0.96158254218209116 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 0 0 10.113261335813709 ;
@@ -6752,7 +6751,7 @@ createNode joint -n "joint19" -p "|Character|Root_Rig|joint2|joint3|joint4|joint
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
 	setAttr ".uoc" 1;
 	setAttr ".t" -type "double3" 0.16229380287573666 -0.020173585665378305 -2.4885143264628003e-16 ;
-	setAttr ".r" -type "double3" 5.3535206551802981e-14 -1.6719964381031191e-11 -0.37268627643946017 ;
+	setAttr ".r" -type "double3" 5.3535206551583816e-14 -1.671996438105687e-11 -0.37268627643946017 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 0 0 -6.8427734126310229 ;
@@ -6766,7 +6765,7 @@ createNode joint -n "joint20" -p "|Character|Root_Rig|joint2|joint3|joint4|joint
 	setAttr ".uoc" 1;
 	setAttr ".oc" 1;
 	setAttr ".t" -type "double3" 0.19624961306405719 -3.7919595932881847e-16 -4.440892098500639e-16 ;
-	setAttr ".r" -type "double3" -4.2970046351092265e-12 -2.5460991770155336e-11 2.2965585141600791 ;
+	setAttr ".r" -type "double3" -4.2793612884516483e-12 -2.5323290449265671e-11 2.2965585141592859 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 0 0 6.1155035662859811 ;
@@ -6780,7 +6779,7 @@ createNode joint -n "joint21" -p "|Character|Root_Rig|joint2|joint3|joint4|joint
 	setAttr ".uoc" 1;
 	setAttr ".oc" 2;
 	setAttr ".t" -type "double3" 0.18132854443188365 -0.026936917204538599 -2.577870418866979e-16 ;
-	setAttr ".r" -type "double3" 4.0928640902345459e-12 -2.6276846036695736e-11 -3.5007882649811615 ;
+	setAttr ".r" -type "double3" 4.0802675256532478e-12 -2.6143282879343599e-11 -3.5007882649805371 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 0 0 -12.021644680057234 ;
@@ -6794,7 +6793,7 @@ createNode joint -n "joint22" -p "|Character|Root_Rig|joint2|joint3|joint4|joint
 	setAttr ".uoc" 1;
 	setAttr ".oc" 3;
 	setAttr ".t" -type "double3" 0.1882811484428373 0.023578872919081565 -4.1281457750860175e-16 ;
-	setAttr ".r" -type "double3" -2.8282832710557092e-12 -1.8882934858336788e-11 4.0208401711511152 ;
+	setAttr ".r" -type "double3" -2.8282832710552027e-12 -1.8882934858335699e-11 4.0208401711501169 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 0 0 9.8513273428086734 ;
@@ -6808,7 +6807,7 @@ createNode joint -n "joint23" -p "|Character|Root_Rig|joint2|joint3|joint4|joint
 	setAttr ".uoc" 1;
 	setAttr ".oc" 4;
 	setAttr ".t" -type "double3" 0.18866131952643009 -0.021710170436955889 -6.7316335855612103e-16 ;
-	setAttr ".r" -type "double3" 2.837727811443421e-14 6.4906037368184573e-12 -3.7698531592181785 ;
+	setAttr ".r" -type "double3" 2.6647302585074343e-14 6.4681808465696203e-12 -3.7698531592179862 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 0 0 -0.36885185403919257 ;
@@ -6822,7 +6821,7 @@ createNode joint -n "joint24" -p "|Character|Root_Rig|joint2|joint3|joint4|joint
 	setAttr ".uoc" 1;
 	setAttr ".oc" 5;
 	setAttr ".t" -type "double3" 0.52308601692395773 -0.02027874798778579 -1.3590744572714384e-15 ;
-	setAttr ".r" -type "double3" 1.8279743479840371e-13 3.8541256240286268e-12 2.0050781119682655 ;
+	setAttr ".r" -type "double3" 1.8388120894454959e-13 3.8931303523138485e-12 2.0050781119688108 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 0 0 -4.7698237989800445 ;
@@ -13649,7 +13648,7 @@ createNode script -n "uiConfigurationScriptNode";
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "57108F28-452D-B050-C392-8FBF94D9E96A";
-	setAttr ".b" -type "string" "playbackOptions -min 1 -max 120 -ast 1 -aet 200 ";
+	setAttr ".b" -type "string" "playbackOptions -min 1 -max 24 -ast 1 -aet 24 ";
 	setAttr ".st" 6;
 createNode lambert -n "Front_Ref_Mat";
 	rename -uid "0F7A1615-4FE7-E4EB-A205-2EB8231F08E2";
@@ -24568,6 +24567,23 @@ createNode dagPose -n "bindPose2";
 	setAttr -s 17 ".g[0:16]" yes no no no no no no no no no no no no no 
 		no no no;
 	setAttr ".bp" yes;
+createNode animCurveTL -n "Root_Rig_translateX";
+	rename -uid "FEB84D5F-47F0-556E-FE63-A1A120538C6A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 0.051945436709423462 12 0.051945436709423462
+		 24 0.051945436709423462;
+createNode animCurveTL -n "Root_Rig_translateY";
+	rename -uid "7AAACF9C-4D1A-375A-8D01-41932802E503";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 5 ".ktv[0:4]"  1 5.2335551094887416 6 6.5 12 5.2335551094887416
+		 18 6.5 24 5.2335551094887416;
+createNode animCurveTL -n "Root_Rig_translateZ";
+	rename -uid "9A586367-4494-162E-02A4-9AB6BBB8D77E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 0 12 0 24 0;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -24644,6 +24660,9 @@ connectAttr "Left_Arm_Rig.msg" "ikHandle1.hsj";
 connectAttr "effector1.hp" "ikHandle1.hee";
 connectAttr "ikSplineSolver.msg" "ikHandle1.hsv";
 connectAttr "curveShape1.ws" "ikHandle1.ic";
+connectAttr "Root_Rig_translateX.o" "Root_Rig.tx";
+connectAttr "Root_Rig_translateY.o" "Root_Rig.ty";
+connectAttr "Root_Rig_translateZ.o" "Root_Rig.tz";
 connectAttr "Root_Rig.s" "joint2.is";
 connectAttr "joint2.s" "joint3.is";
 connectAttr "joint3.s" "joint4.is";
